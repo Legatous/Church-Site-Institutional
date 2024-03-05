@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-    <title>The Real Church</title>
+    <title>The Real Church - Donate</title>
     <link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
     <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css"> 
@@ -21,12 +21,12 @@
                     <button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
                     <ul class="menu">
                         <li class="menu-item"><a href="index.html">Homepage</a></li>
-                        <li class="menu-item current-menu-item"><a href="pastors.html">Pastors</a></li>
+                        <li class="menu-item"><a href="pastors.html">Pastors</a></li>
                         <li class="menu-item"><a href="seremons.html">Sermons</a></li>
                         <li class="menu-item"><a href="events.html">Events</a></li>
                         <li class="menu-item"><a href="families.html">Families</a></li>
                         <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        <li class="menu-item"><a href="donate.html">Donate</a></li>
+                        <li class="menu-item current-menu-item"><a href="donate.html">Donate</a></li>
                     </ul>
                 </div>
                 <div class="mobile-navigation"></div>
@@ -35,27 +35,16 @@
         <main class="main-content">
             <div class="fullwidth-block">
                 <div class="container">
-                    <h2 class="section-title">Our Pastors</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="pastor">
-                                <img src="images/pastor1.jpg" alt="Pastor 1">
-                                <h3 class="pastor-name">John Doe</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="pastor">
-                                <img src="images/pastor2.jpg" alt="Pastor 2">
-                                <h3 class="pastor-name">Jane Smith</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="pastor">
-                                <img src="images/pastor3.jpg" alt="Pastor 3">
-                                <h3 class="pastor-name">Michael Johnson</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="section-title">Donate to Support Our Church</h2>
+                    <p>Your support enables us to continue our mission and ministry. We appreciate your generosity.</p>
+                    <!-- PayPal Donation Button -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_donations">
+                        <input type="hidden" name="business" value="your_paypal_email@example.com">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
                 </div> 
             </div> 
         </main> 
@@ -92,8 +81,8 @@
                             <form action="https://formspree.io/f/xgegwdnw" method="POST" class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6"><input type="text" name = "name "placeholder="Your name..."></div>
+                                    <div class="col-md-6"><input type="email" name = "email" placeholder="Email"></div>
                                     <div class="col-md-6"><input type="text" name = "subject" placeholder="Subject"></div>
-                                    <div class="col-md-6"><input type="email" name = "email" placeholder="Email..."></div>
                                 </div>				
                                 <textarea name="message" placeholder="Your message..."></textarea>
                                 <div class="text-right"><input type="submit" value="Send message"></div>									
@@ -101,23 +90,12 @@
                         </div>
                     </div>
                 </div> 
-                <p class="colophon">©The Real Church 2024</p>
+                <p class="colophon">©Kiril Yordanov 2024</p>
             </div>
         </footer> 
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
-    <script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-		s1.async=true;
-		s1.src='https://embed.tawk.to/64f57d0da91e863a5c1176e5/1h9ff0v47';
-		s1.charset='UTF-8';
-		s1.setAttribute('crossorigin','*');
-		s0.parentNode.insertBefore(s1,s0);
-		})();
-	 </script>
 </body>
 </html>
